@@ -1,0 +1,28 @@
+.videoWrapper {
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    /* position: relative; */
+    width: 50%;
+    height: 40%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.videoWrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        /* Top shadow */
+        linear-gradient(to bottom, #0B061E 0%, transparent 60%),
+        /* Left shadow */
+        linear-gradient(to right, #0B061E 0%, transparent 30%),
+        /* Bottom shadow */
+        linear-gradient(to top, #0B061E 0%, transparent 30%);
+    background-repeat: no-repeat;
+    background-size: 100% 25%, 25% 100%, 100% 25%;
+    background-position: top, left, bottom;
+    z-index: 2;
+}
