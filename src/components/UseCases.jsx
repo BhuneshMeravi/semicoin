@@ -41,7 +41,7 @@ const useCasesData = [
 ];
 
 export default function UseCases() {
-  const [expandedCard, setExpandedCard] = useState(null);
+  const [expandedCard, setExpandedCard] = useState(1);
 
   const handleCardClick = (cardId) => {
     setExpandedCard(expandedCard === cardId ? null : cardId);
@@ -60,13 +60,13 @@ export default function UseCases() {
         </h2>
       </div>
 
-      <div className="flex justify-center gap-4 overflow-x-auto pb-4">
+      <div className="max-w-full flex justify-center flex-wrap gap-4 overflow-x-auto pb-4">
         {useCasesData.map((useCase) => (
           <div
             key={useCase.id}
             className={`relative cursor-pointer transition-all duration-500 ease-in-out flex-shrink-0 ${expandedCard === useCase.id
-                ? 'w-80 md:w-96'
-                : 'w-20 md:w-44'
+              ? 'w-80 md:w-96'
+              : 'w-20 md:w-44'
               } h-96 rounded-lg overflow-hidden group`}
             onClick={() => handleCardClick(useCase.id)}
           >
@@ -97,8 +97,8 @@ export default function UseCases() {
 
               {/* Expanded Content */}
               <div className={`transition-all duration-500 ${expandedCard === useCase.id
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-4 pointer-events-none'
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-4 pointer-events-none'
                 } px-8 py-16 h-full flex flex-col justify-between items-center text-center`}>
                 <div>
                   <h3 className="text-white text-xl orbitron-bold mb-4 leading-tight">

@@ -10,7 +10,7 @@ export default function PresalePanel() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-white text-4xl orbitron-regular mb-6">Semicon <span className="text-[#D3BCBC]">Presale</span></h1>
-          <p className="text-gray-300 text-base text-left montserrat-regular leading-tight">
+          <p className="text-gray-300 text-base text-center sm:text-left montserrat-regular leading-tight">
             Join the Semicon (SMC) Presale and step into the future of
             AI-powered blockchain innovation. Secure your tokens
             early to enjoy exclusive presale rewards and become part
@@ -88,7 +88,7 @@ export default function PresalePanel() {
           {/* Connect Wallet Button */}
           <div className="flex justify-center">
 
-            <button className="w-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white py-2 rounded-xl text-xl flex items-center justify-center gap-3 transition-all">
+            <button className="w-full sm:w-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white py-2 rounded-xl text-xl flex items-center justify-center gap-3 transition-all">
               <span className="text-[15px] gilroy-semibold">💳</span>
               Connect Wallet
             </button>

@@ -23,9 +23,9 @@ export default function Presale() {
         <div className="relative grid md:grid-cols-2 gap-10 items-start">
 
           <div className="relative">
-            <h1 className="text-[46px] orbitron-semibold neon">Join The Future — Semicon Presale</h1>
-            <p className="text-[#DBDBDB] montserrat-regular test-sm mt-4 max-w-xl">Join early and secure SMC at the lowest launch price—built for innovators and early backers of the AI-blockchain future.</p>
-            <div className="mt-6 flex gap-4 montserrat-bold text-sm">
+            <h1 className="text-[46px] orbitron-semibold neon text-center sm:text-left">Join The Future — Semicon Presale</h1>
+            <p className="text-[#DBDBDB] montserrat-regular test-sm text-center sm:text-left mt-4 max-w-xl">Join early and secure SMC at the lowest launch price—built for innovators and early backers of the AI-blockchain future.</p>
+            <div className="mt-6 flex justify-center sm:justify-start gap-4 montserrat-bold text-sm">
               <a href="#" className="bg-semiblue hover:brightness-110 px-6 py-2 rounded-full text-white transition-colors">
                 Buy Now
               </a>

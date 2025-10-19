@@ -12,8 +12,8 @@ const steps = [
 export default function HowToBuy({ className = "" }) {
     return (
         <div className={`mt-6 ${className}`}>
-            <h3 className="text-[32px] orbitron-semibold mb-4">How To Buy?</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <h3 className="text-[32px] text-center sm:text-left orbitron-semibold mb-4">How To Buy?</h3>
+            <div className="grid md:grid-cols-2 gap-6 mx-6 sm:mx-0">
                 <div className="flex items-start gap-4">
                     <div className="w-full mt-8">
                         <img src={presaleImg} alt="cart" className="rounded" />

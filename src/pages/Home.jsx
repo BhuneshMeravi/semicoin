@@ -47,7 +47,7 @@ export default function Home() {
               <p className="text-[#DBDBDB] text-sm mb-8 montserrat-regular">
                 Semicon (SMC) Empowers Global Decentralized Innovation With Secure, Low-Cost, And Always Accessible Blockchain Solutions For Seamless Digital Payments And Connectivity.
               </p>
-              <div className="flex gap-4 justify-end montserrat-bold text-sm">
+              <div className="flex gap-4 justify-end montserrat-bold text-sm w-full">
                 <a href="/presale" className="bg-semiblue hover:brightness-110 px-6 py-2 rounded-full text-white transition-colors">
                   Buy Now
                 </a>
