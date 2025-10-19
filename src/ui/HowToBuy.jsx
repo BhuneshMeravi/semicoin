@@ -1,3 +1,4 @@
+import presaleImg from "../assets/presale3.jpg"
 
 
 const steps = [
@@ -11,14 +12,11 @@ const steps = [
 export default function HowToBuy({ className = "" }) {
     return (
         <div className={`mt-6 ${className}`}>
-            <h3 className="text-xl font-bold mb-4">How To Buy?</h3>
+            <h3 className="text-[32px] orbitron-semibold mb-4">How To Buy?</h3>
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start gap-4">
-                    <div className="w-40">
-                        <img src="/assets/presale.png" alt="cart" className="rounded" />
-                    </div>
-                    <div className="hidden md:block text-gray-400">
-                        Visual: follow the steps to purchase tokens quickly and safely.
+                    <div className="w-full mt-8">
+                        <img src={presaleImg} alt="cart" className="rounded" />
                     </div>
                 </div>
 
@@ -28,8 +26,8 @@ export default function HowToBuy({ className = "" }) {
                             <li key={idx} className="flex gap-4 items-start">
                                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-semiblue to-accent flex items-center justify-center font-bold text-black">{idx + 1}</div>
                                 <div>
-                                    <div className="font-semibold">{s.title}</div>
-                                    <div className="text-sm text-gray-300">{s.desc}</div>
+                                    <div className="montserrat-semibold text-[26px]">{s.title}</div>
+                                    <div className="text-sm montserrat-regular text-gray-300">{s.desc}</div>
                                 </div>
                             </li>
                         ))}
